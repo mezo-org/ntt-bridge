@@ -32,9 +32,10 @@ interface INttToken {
     ) external;
 
     // NOTE: NttTokens in `burn` mode require the `burn` method to be present.
-    //       This method is not present in the standard ERC20 interface, but is
-    //       found in the `ERC20Burnable` interface.
+    //       This method is not present in the standard ERC20 interface. It is
+    //       adjusted to match MUSD's burn function.
     function burn(
+        address account,
         uint256 amount
     ) external;
 }
