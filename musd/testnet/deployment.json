@@ -1,4 +1,51 @@
 {
   "network": "Testnet",
-  "chains": {}
+  "chains": {
+    "Mezo": {
+      "version": "1.1.0",
+      "mode": "locking",
+      "paused": false,
+      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "manager": "0x20888B20e2F5F405d44261dA96467a1b1acE15be",
+      "token": "0x118917a40FAF1CD7a13dB0Ef56C86De7973Ac503",
+      "transceivers": {
+        "threshold": 1,
+        "wormhole": {
+          "address": "0x3106675EDE4A64d70131247466FD8704A3d42123",
+          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+          "executor": true
+        }
+      },
+      "limits": {
+        "outbound": "184467440737.095516150000000000",
+        "inbound": {
+          "Sepolia": "1000.000000000000000000"
+        }
+      },
+      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+    },
+    "Sepolia": {
+      "version": "1.1.0",
+      "mode": "burning",
+      "paused": false,
+      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "manager": "0x1Ca5060BF142c58168aEdb974aABb020BC081A56",
+      "token": "0xeB5a5d39dE4Ea42C2Aa6A57EcA2894376683bB8E",
+      "transceivers": {
+        "threshold": 1,
+        "wormhole": {
+          "address": "0x62d1286683507939c065C12f2d1E80cCa8CCD125",
+          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+          "executor": true
+        }
+      },
+      "limits": {
+        "outbound": "184467440737.095516150000000000",
+        "inbound": {
+          "Mezo": "10000.000000000000000000"
+        }
+      },
+      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+    }
+  }
 }

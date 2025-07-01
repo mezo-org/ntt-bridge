@@ -1470,7 +1470,7 @@ async function upgradeEvm<N extends Network, C extends EvmChains>(
 --sig "upgrade(address)" \
 ${ntt.managerAddress} \
 ${signerArgs} \
---broadcast \
+--broadcast --slow \
 ${verifyArgs} | tee last-run.stdout`, {
                 cwd: `${pwd}/evm`,
                 stdio: "inherit"
@@ -1601,7 +1601,7 @@ forge script --via-ir script/DeployWormholeNtt.s.sol \
 --rpc-url ${rpc} \
 ${simulateArg} \
 --sig "${sig}" ${wormhole} ${token} ${effectiveRelayer} ${specialRelayer} ${decimals} ${modeUint} \
---broadcast ${verifyArgs.join(' ')} ${signerArgs} 2>&1 | tee last-run.stdout`, {
+--broadcast --slow ${verifyArgs.join(' ')} ${signerArgs} 2>&1 | tee last-run.stdout`, {
                         cwd: `${pwd}/evm`,
                         encoding: 'utf8',
                         stdio: 'inherit'
