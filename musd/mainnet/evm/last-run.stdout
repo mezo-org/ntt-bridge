@@ -1,0 +1,109 @@
+No files changed, compilation skipped
+Script ran successfully.
+
+== Logs ==
+  Deploying Wormhole Ntt...
+  NttManager: 0x5293158bf7a81ED05418DA497a80F7e6Dbf4477E
+  WormholeTransceiver: 0x76ddB3f1dDe02391Ef0A28664499B74C29d18d3E
+  Transceiver address set on NttManager:  0x76ddB3f1dDe02391Ef0A28664499B74C29d18d3E
+  Outbound rate limit set on NttManager:  184467440737095516150000000000
+  Threshold set on NttManager: 1
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 1
+
+Estimated gas price: 3.481448173 gwei
+
+Estimated total gas used for script: 12095110
+
+Estimated amount required: 0.04210849861173403 ETH
+
+==========================
+
+
+==========================
+
+ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
+##
+Start verification for (4) contracts
+Start verifying contract `0x075108F275Ed81c9CFc01065E6e50CEea81D6363` deployed on mainnet
+EVM version: london
+Compiler version: 0.8.19
+Optimizations:    200
+Constructor args: 000000000000000000000000dd468a1ddc392dcdbef6db6e34e89aa338f9f1860000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000151800000000000000000000000000000000000000000000000000000000000000000
+
+Submitting verification for [src/NttManager/NttManager.sol:NttManager] 0x075108F275Ed81c9CFc01065E6e50CEea81D6363.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `sded9sskkbwvvn9pdnuastvb29wzcdbebdvqbz7643lneq3aum`
+	URL: https://etherscan.io/address/0x075108f275ed81c9cfc01065e6e50ceea81d6363
+Contract verification status:
+Response: `NOTOK`
+Details: `Pending in queue`
+Warning: Verification is still pending...; waiting 15 seconds before trying again (7 tries remaining)
+Contract verification status:
+Response: `OK`
+Details: `Pass - Verified`
+Contract successfully verified
+Start verifying contract `0x5293158bf7a81ED05418DA497a80F7e6Dbf4477E` deployed on mainnet
+EVM version: london
+Compiler version: 0.8.19
+Optimizations:    200
+Constructor args: 000000000000000000000000075108f275ed81c9cfc01065e6e50ceea81d636300000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000
+
+Submitting verification for [lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy] 0x5293158bf7a81ED05418DA497a80F7e6Dbf4477E.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `s8576rdkkgmukvyzz6dggavvnh2ghwmswqvb34tab63ejjq1qb`
+	URL: https://etherscan.io/address/0x5293158bf7a81ed05418da497a80f7e6dbf4477e
+Contract verification status:
+Response: `NOTOK`
+Details: `Already Verified`
+Contract source code already verified
+Start verifying contract `0x9Ec2Ea6c1da48ac64837533AF341682442395D6F` deployed on mainnet
+EVM version: london
+Compiler version: 0.8.19
+Optimizations:    200
+Constructor args: 0000000000000000000000005293158bf7a81ed05418da497a80f7e6dbf4477e00000000000000000000000098f3c9e6e3face36baad05fe09d375ef1464288b00000000000000000000000027428dd2d3dd32a4d7f7c497eaaa23130d89491100000000000000000000000063be47835c7d66c4aa5b2c688dc6ed9771c94c7400000000000000000000000000000000000000000000000000000000000000ca000000000000000000000000000000000000000000000000000000000007a120
+
+Submitting verification for [src/Transceiver/WormholeTransceiver/WormholeTransceiver.sol:WormholeTransceiver] 0x9Ec2Ea6c1da48ac64837533AF341682442395D6F.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `s3fcxyduxiffeqdrmesjvxvrixdjrtwu8uh6ism5rcp9myeer9`
+	URL: https://etherscan.io/address/0x9ec2ea6c1da48ac64837533af341682442395d6f
+Contract verification status:
+Response: `NOTOK`
+Details: `Pending in queue`
+Warning: Verification is still pending...; waiting 15 seconds before trying again (7 tries remaining)
+Contract verification status:
+Response: `NOTOK`
+Details: `Already Verified`
+Contract source code already verified
+Start verifying contract `0x76ddB3f1dDe02391Ef0A28664499B74C29d18d3E` deployed on mainnet
+EVM version: london
+Compiler version: 0.8.19
+Optimizations:    200
+Constructor args: 0000000000000000000000009ec2ea6c1da48ac64837533af341682442395d6f00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000
+
+Submitting verification for [lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy] 0x76ddB3f1dDe02391Ef0A28664499B74C29d18d3E.
+Submitted contract for verification:
+	Response: `OK`
+	GUID: `pst9vfdgw77tqgjwuasdsvfncjdvpzwevi8ak9qvnblmccfpfg`
+	URL: https://etherscan.io/address/0x76ddb3f1dde02391ef0a28664499b74c29d18d3e
+Contract verification status:
+Response: `NOTOK`
+Details: `Pending in queue`
+Warning: Verification is still pending...; waiting 15 seconds before trying again (7 tries remaining)
+Contract verification status:
+Response: `NOTOK`
+Details: `Already Verified`
+Contract source code already verified
+All (4) contracts were verified!
+
+Transactions saved to: /Users/ryanwatts/Projects/ntt-bridge/musd/mainnet/evm/broadcast/DeployWormholeNtt.s.sol/1/run-latest.json
+
+Sensitive values saved to: /Users/ryanwatts/Projects/ntt-bridge/musd/mainnet/evm/cache/DeployWormholeNtt.s.sol/1/run-latest.json
+
