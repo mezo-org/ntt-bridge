@@ -3,16 +3,15 @@ pragma solidity >=0.8.8 <0.9.0;
 
 import "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
 import "openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol";
-import "openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "wormhole-solidity-sdk/Utils.sol";
 import "wormhole-solidity-sdk/libraries/BytesParsing.sol";
 
 import "../libraries/RateLimiter.sol";
 
 import "../interfaces/INttManager.sol";
-import "../interfaces/INttToken.sol";
 import "../interfaces/ITransceiver.sol";
 
+import "../interfaces/IMUSD.sol";
 import {ManagerBase} from "./ManagerBase.sol";
 
 /// @title NttManager
@@ -423,7 +422,7 @@ contract NttManager is INttManager, RateLimiter, ManagerBase {
                     // Since there is no standard way to query for burn fee amounts with burnable tokens,
                     // and NTT would be used on a per-token basis, implementing this functionality
                     // is left to integrating projects who may need to account for burn fees on their tokens.
-                    ERC20Burnable(token).burn(amount);
+                    IMUSD(token).burn(address(this), amount);
 
                     // tokens held by the contract after the operation should be the same as before
                     uint256 balanceAfterBurn = _getTokenBalanceOf(token, address(this));
@@ -634,7 +633,7 @@ contract NttManager is INttManager, RateLimiter, ManagerBase {
             IERC20(token).safeTransfer(recipient, untrimmedAmount);
         } else if (mode == Mode.BURNING) {
             // mint tokens to the specified recipient
-            INttToken(token).mint(recipient, untrimmedAmount);
+            IMUSD(token).mint(recipient, untrimmedAmount);
         } else {
             revert InvalidMode(uint8(mode));
         }
