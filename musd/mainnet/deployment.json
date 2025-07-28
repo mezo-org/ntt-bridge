@@ -5,7 +5,7 @@
       "version": "1.1.0",
       "mode": "locking",
       "paused": false,
-      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "owner": "0x98d8899c3030741925be630c710a98b57f397c7a",
       "manager": "0x7efb386675d75280D39Aae42964A6776DE0ee0bD",
       "token": "0xdD468A1DDc392dcdbEf6db6e34E89AA338F9F186",
       "transceivers": {
@@ -28,7 +28,7 @@
       "version": "1.1.0",
       "mode": "burning",
       "paused": false,
-      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "owner": "0x98d8899c3030741925be630c710a98b57f397c7a",
       "manager": "0x5293158bf7a81ED05418DA497a80F7e6Dbf4477E",
       "token": "0xdD468A1DDc392dcdbEf6db6e34E89AA338F9F186",
       "transceivers": {
