@@ -22,7 +22,7 @@
           "Ethereum": "1000000.000000000000000000"
         }
       },
-      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+      "pauser": "0x40C7b9612B394212394EA860cACd0e176CA4Ae5B"
     },
     "Ethereum": {
       "version": "1.1.0",
@@ -45,7 +45,7 @@
           "Mezo": "1000000.000000000000000000"
         }
       },
-      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+      "pauser": "0x40C7b9612B394212394EA860cACd0e176CA4Ae5B"
     }
   }
 }
