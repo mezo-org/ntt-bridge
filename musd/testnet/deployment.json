@@ -12,7 +12,7 @@
         "threshold": 1,
         "wormhole": {
           "address": "0x3106675EDE4A64d70131247466FD8704A3d42123",
-          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+          "pauser": "0x6e80164ea60673D64d5d6228beb684a1274Bb017"
         }
       },
       "limits": {
@@ -21,7 +21,7 @@
           "Sepolia": "1000000.000000000000000000"
         }
       },
-      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+      "pauser": "0x6e80164ea60673D64d5d6228beb684a1274Bb017"
     },
     "Sepolia": {
       "version": "1.1.0",
@@ -34,7 +34,7 @@
         "threshold": 1,
         "wormhole": {
           "address": "0x62d1286683507939c065C12f2d1E80cCa8CCD125",
-          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+          "pauser": "0x6e80164ea60673D64d5d6228beb684a1274Bb017"
         }
       },
       "limits": {
@@ -43,7 +43,7 @@
           "Mezo": "1000000.000000000000000000"
         }
       },
-      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf"
+      "pauser": "0x6e80164ea60673D64d5d6228beb684a1274Bb017"
     }
   }
 }
