@@ -1,14 +1,33 @@
 # NTT Bridge
 
-A bridge for transferring native tokens across different blockchains powered by Wormhole.
+A bridge for transferring native tokens across different blockchains, powered by Wormhole.
+This repository tracks all Mezo bridgeable tokens supported by the Wormhole bridge. Each token on a given network is a fork of the [Wormhole native token transfer repository](https://github.com/wormhole-foundation/native-token-transfers). For comprehensive documentation, refer to the [Wormhole native token transfer docs](https://wormhole.com/docs/products/native-token-transfers/overview/).
 
-## Git
+## Bridgeable tokens
 
-This project uses git subtrees to track Wormhole [native-token-transfers](https://github.com/wormhole-foundation/native-token-transfers)
-dependencies which this project is based on. The goal is to track not only changes
-made specifically to this project that resulted in a token deployment (e.g.,
-`deployment.json` config file or other created artifacts), but also changes made
-to the Wormhole's native token transfer repository. Structure is as follows:
+### MUSD on **Mainnet**
+
+| Chain | Mode |
+|-------|---------------|
+| Mezo  | Locking |
+| Ethereum  | Burning |
+
+## Configuration
+
+One of the building blocks of the NTT Bridge is the `deployment.json` file. This file
+is a critical configuration that defines the complete state of an NTT (Native Token Transfer)
+Bridge deployment across multiple blockchain networks. This file contains all the necessary
+information about deployed contracts, their configurations, and the relationships between
+different chains in the bridge network.
+
+## NTT CLI
+
+The NTT CLI is a tool that allows you to manage native token transfers across multiple
+blockchain networks. For available commands refer to the [NTT CLI documentation](https://wormhole.com/docs/products/native-token-transfers/reference/cli-commands/#ntt-cli-commands).
+
+## Project Structure
+
+The structure of the project is organized to support multiple tokens, each with both testnet and mainnet configurations. Here is a high-level layout:
 
 ``` text
 |- ntt-bridge
@@ -18,9 +37,18 @@ to the Wormhole's native token transfer repository. Structure is as follows:
 |-- etc. (other tokens)
 ```
 
-`testnet` and `mainnet` directories mirror the Wormhole's native token transfer
-repository. You can fetch and pull the latest changes from Wormhole for the latest
-features and bug fixes. Here are a couple of example commands for testnet `musd`
+Each token directory contains:
+
+- `testnet` directory for testnet configuration
+- `mainnet` directory for mainnet configuration
+
+## Git
+
+This project uses git subtrees. The goal is to track not only changes
+made specifically to this project, but also changes made
+to the Wormhole's [native-token-transfers](https://github.com/wormhole-foundation/native-token-transfers) repository.
+
+Here are a couple of example commands for testnet `musd`
 marked by `--prefix=musd/testnet`, but you can use the same commands for other
 tokens. In this example, `musd-testnet` is your local name for the Wormhole remote.
 
