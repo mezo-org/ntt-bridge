@@ -18,8 +18,7 @@ a given network largely mirrors that of the [Wormhole native token transfer repo
 One of the building blocks of the NTT Bridge is the `deployment.json` file. This file
 is a critical configuration that defines the complete state of an NTT (Native Token Transfer)
 Bridge deployment across multiple blockchain networks. This file contains all the necessary
-information about deployed contracts, their configurations, and the relationships between
-different chains in the bridge network.
+information about deployed contracts, [access control](https://wormhole.com/docs/products/native-token-transfers/configuration/access-control/), their configurations, and the relationships between different chains in the bridge network.
 
 ## NTT CLI
 
