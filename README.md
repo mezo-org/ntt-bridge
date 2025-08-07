@@ -1,7 +1,8 @@
 # NTT Bridge
 
 A bridge for transferring native tokens across different blockchains, powered by Wormhole.
-This repository tracks all Mezo bridgeable tokens supported by the Wormhole bridge. Each token on a given network is a fork of the [Wormhole native token transfer repository](https://github.com/wormhole-foundation/native-token-transfers). For comprehensive documentation, refer to the [Wormhole native token transfer docs](https://wormhole.com/docs/products/native-token-transfers/overview/).
+This repository tracks all Mezo bridgeable tokens supported by the Wormhole bridge. The code structure of each token on
+a given network largely mirrors that of the [Wormhole native token transfer repository](https://github.com/wormhole-foundation/native-token-transfers). For comprehensive documentation, refer to the [Wormhole native token transfer docs](https://wormhole.com/docs/products/native-token-transfers/overview/).
 
 ## Bridgeable tokens
 
