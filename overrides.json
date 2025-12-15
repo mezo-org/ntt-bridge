@@ -1,0 +1,13 @@
+{
+  "chains": {
+    "Sepolia": {
+      "rpc": "https://ethereum-sepolia-rpc.publicnode.com"
+    },
+    "Mezo": {
+      "rpc": "https://rpc.test.mezo.org",
+      "verifier": "blockscout",
+      "verifier_url": "https://api.explorer.test.mezo.org/api/",
+      "scan_api_key": "empty"
+    }
+  }
+}
