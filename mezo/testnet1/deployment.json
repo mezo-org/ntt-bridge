@@ -1,0 +1,93 @@
+{
+  "network": "Testnet",
+  "chains": {
+    "Mezo": {
+      "version": "1.1.0",
+      "mode": "locking",
+      "paused": false,
+      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "manager": "0xD428BDd15E87a0bB6c4a269B2FeAcc53ACC7B714",
+      "token": "0x7B7c000000000000000000000000000000000001",
+      "transceivers": {
+        "threshold": 1,
+        "wormhole": {
+          "address": "0xaFB964Dc726cBF7160E6029d3518e415a285deFd",
+          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+          "executor": true
+        }
+      },
+      "limits": {
+        "outbound": "184467440737.095516150000000000",
+        "inbound": {}
+      },
+      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "managerVariant": "standard"
+    },
+    "Sepolia": {
+      "version": "1.1.0",
+      "mode": "burning",
+      "paused": false,
+      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "manager": "0x8adF3f35dBE4026112bCFc078872bcb967732Ea8",
+      "token": "0xa71C921A6dDf68bdD16dFc570Ca0dC8E47542c7C",
+      "transceivers": {
+        "threshold": 1,
+        "wormhole": {
+          "address": "0x4EDC83c5C5B0C41A594371485554B95280653f94",
+          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+          "executor": true
+        }
+      },
+      "limits": {
+        "outbound": "184467440737.095516150000000000",
+        "inbound": {}
+      },
+      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "managerVariant": "standard"
+    },
+    "BaseSepolia": {
+      "version": "1.1.0",
+      "mode": "burning",
+      "paused": false,
+      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "manager": "0x41C9b5639E3F2F6C61e9B78b2c6FF3746E79d91A",
+      "token": "0xa71C921A6dDf68bdD16dFc570Ca0dC8E47542c7C",
+      "transceivers": {
+        "threshold": 1,
+        "wormhole": {
+          "address": "0x292C9fdf2e2475599cBe350cc473c221Bd67AE28",
+          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+          "executor": true
+        }
+      },
+      "limits": {
+        "outbound": "184467440737.095516150000000000",
+        "inbound": {}
+      },
+      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "managerVariant": "standard"
+    },
+    "Bsc": {
+      "version": "1.1.0",
+      "mode": "burning",
+      "paused": false,
+      "owner": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "manager": "0x41C9b5639E3F2F6C61e9B78b2c6FF3746E79d91A",
+      "token": "0xa71C921A6dDf68bdD16dFc570Ca0dC8E47542c7C",
+      "transceivers": {
+        "threshold": 1,
+        "wormhole": {
+          "address": "0x292C9fdf2e2475599cBe350cc473c221Bd67AE28",
+          "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+          "executor": true
+        }
+      },
+      "limits": {
+        "outbound": "184467440737.095516150000000000",
+        "inbound": {}
+      },
+      "pauser": "0x123694886DBf5Ac94DDA07135349534536D14cAf",
+      "managerVariant": "standard"
+    }
+  }
+}
